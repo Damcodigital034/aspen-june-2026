@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aspen LinkedIn — June 2026 Calendar Review</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{font-family:'Inter','Segoe UI',Arial,sans-serif;background:#0a0f1a;color:#dfe7f2;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  a{color:#5aa8ff;text-decoration:none;}
+  ::selection{background:#1a56a0;color:#fff;}
+
+  /* ───────── HERO ───────── */
+  .hero{
+    background:radial-gradient(ellipse at top right, rgba(26,86,160,0.35), transparent 60%),
+               radial-gradient(ellipse at bottom left, rgba(10,80,60,0.25), transparent 55%),
+               linear-gradient(160deg,#070c16 0%, #0d1a2e 100%);
+    padding:64px 32px 56px;border-bottom:1px solid #1a2540;
+  }
+  .hero-inner{max-width:1180px;margin:0 auto;}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:3px;color:#5aa8ff;text-transform:uppercase;margin-bottom:18px;}
+  .eyebrow::before{content:"";width:28px;height:1px;background:#5aa8ff;}
+  .hero h1{font-size:46px;font-weight:900;letter-spacing:-1.2px;line-height:1.05;color:#fff;margin-bottom:14px;}
+  .hero h1 .accent{color:#5aa8ff;}
+  .hero .sub{font-size:17px;color:#9bb0c8;max-width:780px;margin-bottom:32px;}
+
+  .meta-row{display:flex;flex-wrap:wrap;gap:28px;margin-top:6px;}
+  .meta-pill{display:flex;flex-direction:column;}
+  .meta-pill .label{font-size:10.5px;font-weight:700;color:#5a7090;letter-spacing:1.6px;text-transform:uppercase;}
+  .meta-pill .value{font-size:15px;color:#dfe7f2;font-weight:600;margin-top:4px;}
+
+  /* ───────── STATS BAR ───────── */
+  .stats-bar{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1a2540;
+    border-top:1px solid #1a2540;border-bottom:1px solid #1a2540;
+  }
+  .stat{background:#0a0f1a;padding:26px 28px;}
+  .stat .n{font-size:38px;font-weight:900;line-height:1;color:#fff;letter-spacing:-1px;}
+  .stat .n.green{color:#5fd49a;}
+  .stat .n.amber{color:#f5b454;}
+  .stat .n.blue{color:#5aa8ff;}
+  .stat .l{font-size:11px;color:#7388a4;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;margin-top:8px;}
+
+  /* ───────── LAYOUT ───────── */
+  .container{max-width:1180px;margin:0 auto;padding:48px 32px 80px;}
+  .section{margin-bottom:60px;}
+  .section-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:24px;border-bottom:1px solid #1a2540;padding-bottom:18px;}
+  .section-head h2{font-size:24px;font-weight:800;letter-spacing:-0.5px;color:#fff;}
+  .section-head h2 .num{color:#5aa8ff;margin-right:10px;}
+  .section-head .ctx{font-size:13px;color:#7388a4;}
+
+  /* ───────── MARK QUESTIONS ───────── */
+  .mark-block{
+    background:linear-gradient(135deg, rgba(245,180,84,0.08), rgba(245,180,84,0.02));
+    border:1px solid rgba(245,180,84,0.3);border-radius:14px;padding:30px 32px;margin-bottom:14px;
+    position:relative;overflow:hidden;
+  }
+  .mark-block::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:#f5b454;}
+  .mark-tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:2px;background:#f5b454;color:#1a1108;padding:5px 10px;border-radius:4px;text-transform:uppercase;margin-bottom:14px;}
+  .mark-q{font-size:19px;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.4;}
+  .mark-body{font-size:14.5px;color:#b8c8dc;margin-bottom:14px;}
+  .mark-body strong{color:#fff;}
+  .mark-ref{font-size:12px;color:#5a7090;font-style:italic;}
+  .mark-ref a{color:#5aa8ff;}
+
+  /* ───────── CALENDAR ───────── */
+  .calendar{
+    background:#0d1424;border:1px solid #1a2540;border-radius:14px;overflow:hidden;
+  }
+  .cal-head{display:grid;grid-template-columns:90px repeat(7,1fr);background:#0a1020;}
+  .cal-head .day{padding:14px 10px;text-align:center;font-size:10px;font-weight:700;color:#5a7090;letter-spacing:1.4px;text-transform:uppercase;border-right:1px solid #1a2540;}
+  .cal-head .day:last-child{border-right:none;}
+  .cal-row{display:grid;grid-template-columns:90px repeat(7,1fr);border-top:1px solid #1a2540;min-height:96px;}
+  .cal-week{background:#0a1020;border-right:1px solid #1a2540;padding:14px 10px;text-align:center;display:flex;flex-direction:column;justify-content:center;}
+  .cal-week .w{font-size:9.5px;font-weight:700;color:#5a7090;letter-spacing:1.4px;text-transform:uppercase;}
+  .cal-week .d{font-size:13px;font-weight:700;color:#dfe7f2;margin-top:4px;}
+  .cal-cell{border-right:1px solid #1a2540;padding:10px 8px;position:relative;cursor:default;}
+  .cal-cell:last-child{border-right:none;}
+  .cal-cell .date-num{font-size:10.5px;color:#5a7090;font-weight:700;}
+  .cal-post{
+    margin-top:6px;padding:7px 9px;border-radius:6px;font-size:11px;font-weight:600;
+    cursor:pointer;transition:transform 0.15s;line-height:1.3;border-left:3px solid;
+  }
+  .cal-post:hover{transform:translateX(2px);}
+  .cal-post .p-pillar{font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;opacity:0.7;margin-bottom:2px;}
+  .post-p1{background:rgba(90,168,255,0.12);border-color:#5aa8ff;color:#bedaf5;}
+  .post-p2{background:rgba(140,108,255,0.12);border-color:#8c6cff;color:#d4c8ff;}
+  .post-p3{background:rgba(95,212,154,0.12);border-color:#5fd49a;color:#bce8d3;}
+
+  /* ───────── POST CARDS ───────── */
+  .posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:24px;}
+  .post-card{
+    background:#0d1424;border:1px solid #1a2540;border-radius:14px;overflow:hidden;
+    transition:transform 0.2s, border-color 0.2s;display:flex;flex-direction:column;
+  }
+  .post-card:hover{transform:translateY(-3px);border-color:#2a3a5c;}
+
+  .pc-head{padding:14px 16px;border-bottom:1px solid #1a2540;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .pc-date{display:flex;flex-direction:column;}
+  .pc-date .d{font-size:18px;font-weight:800;color:#fff;letter-spacing:-0.4px;}
+  .pc-date .m{font-size:10.5px;font-weight:600;color:#5a7090;letter-spacing:1.2px;text-transform:uppercase;}
+  .pc-pillar{font-size:9.5px;font-weight:800;letter-spacing:1.4px;padding:5px 9px;border-radius:4px;text-transform:uppercase;}
+  .pill-p1{background:rgba(90,168,255,0.18);color:#bedaf5;}
+  .pill-p2{background:rgba(140,108,255,0.18);color:#d4c8ff;}
+  .pill-p3{background:rgba(95,212,154,0.18);color:#bce8d3;}
+
+  /* LinkedIn-style preview */
+  .li-frame{background:#fff;color:#000;padding:14px 16px 8px;font-size:13px;}
+  .li-author{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .li-avatar{width:42px;height:42px;border-radius:50%;background:#1a3a5c;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
+  .li-avatar svg{width:28px;height:28px;}
+  .li-meta{display:flex;flex-direction:column;}
+  .li-name{font-size:13.5px;font-weight:700;color:#000;line-height:1.2;}
+  .li-tagline{font-size:11px;color:#666;line-height:1.3;margin-top:1px;}
+  .li-time{font-size:11px;color:#888;}
+  .li-time::before{content:"·";margin-right:5px;}
+
+  .li-caption{
+    font-size:13.5px;color:#000;line-height:1.5;white-space:pre-wrap;margin-bottom:0;
+    display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+    overflow:hidden;
+  }
+  .li-caption.expanded{
+    display:block;-webkit-line-clamp:unset;overflow:visible;
+  }
+  .li-caption .hashtag{color:#0a66c2;font-weight:500;}
+  .li-more{
+    display:inline-block;color:#666;font-size:13.5px;cursor:pointer;font-weight:600;
+    margin:2px 0 10px;user-select:none;
+  }
+  .li-more:hover{color:#0a66c2;text-decoration:underline;}
+
+  .li-media{background:#000;margin:0 -16px;}
+  .li-media img{width:100%;display:block;}
+  .li-media-mock{
+    background:linear-gradient(135deg,#0d1424,#1a2540);
+    aspect-ratio:1/1;color:#fff;padding:32px 28px;display:flex;flex-direction:column;justify-content:center;
+    border-top:1px solid #1a2540;border-bottom:1px solid #1a2540;position:relative;overflow:hidden;
+  }
+  .li-media-mock::before{
+    content:"";position:absolute;top:-20%;right:-15%;width:240px;height:240px;
+    border-radius:50%;background:radial-gradient(circle, rgba(90,168,255,0.25), transparent 70%);
+  }
+  .li-media-mock .logo-row{display:flex;align-items:center;gap:8px;margin-bottom:24px;font-size:11px;font-weight:800;letter-spacing:2px;color:#5fd49a;}
+  .li-media-mock .logo-row .dot{width:12px;height:12px;border-radius:50%;background:#5fd49a;}
+  .li-media-mock h3{font-size:26px;font-weight:900;line-height:1.15;letter-spacing:-0.8px;margin-bottom:14px;position:relative;}
+  .li-media-mock p{font-size:13px;color:#9bb0c8;line-height:1.5;position:relative;}
+  .li-media-mock .stat-huge{font-size:72px;font-weight:900;color:#fff;letter-spacing:-3px;line-height:1;margin-bottom:14px;position:relative;}
+  .li-media-mock .stat-huge .sym{color:#5fd49a;}
+  .li-media-mock .stat-sub{font-size:13px;color:#9bb0c8;line-height:1.5;position:relative;font-weight:500;}
+  .li-media-mock .stat-foot{font-size:11px;color:#5a7090;margin-top:18px;position:relative;font-style:italic;}
+  .li-media-mock .carousel-tag{font-size:10px;font-weight:800;letter-spacing:2px;color:#5aa8ff;margin-bottom:8px;text-transform:uppercase;position:relative;}
+  .li-media-mock .three-up{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:18px;position:relative;}
+  .li-media-mock .three-up .box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:10px;}
+  .li-media-mock .three-up .box .lbl{font-size:9px;color:#7388a4;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;}
+  .li-media-mock .three-up .box .v{font-size:13px;color:#fff;font-weight:600;line-height:1.3;}
+
+  .li-actions{display:flex;justify-content:space-between;padding:8px 16px 6px;color:#666;font-size:11px;border-bottom:1px solid #eee;margin:0 -16px;}
+  .li-bar{display:flex;justify-content:space-around;padding:6px 0;margin:0 -16px;}
+  .li-bar .b{display:flex;align-items:center;gap:5px;font-size:12px;color:#666;font-weight:600;padding:8px;}
+  .li-bar .b svg{width:18px;height:18px;}
+
+  /* Status + meta on the card */
+  .pc-status{padding:14px 16px;border-top:1px solid #1a2540;}
+  .status-pill{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:1.4px;padding:5px 10px;border-radius:4px;text-transform:uppercase;}
+  .status-pill::before{content:"";width:6px;height:6px;border-radius:50%;}
+  .s-approved{background:rgba(95,212,154,0.15);color:#5fd49a;}
+  .s-approved::before{background:#5fd49a;}
+  .s-rewritten{background:rgba(90,168,255,0.15);color:#5aa8ff;}
+  .s-rewritten::before{background:#5aa8ff;}
+  .s-pending{background:rgba(245,180,84,0.15);color:#f5b454;}
+  .s-pending::before{background:#f5b454;}
+  .s-fixed{background:rgba(200,160,255,0.15);color:#c8a0ff;}
+  .s-fixed::before{background:#c8a0ff;}
+
+  .pc-note{margin-top:12px;font-size:12.5px;color:#9bb0c8;line-height:1.55;}
+  .pc-note .lbl{display:block;font-size:9.5px;font-weight:800;letter-spacing:1.6px;color:#5a7090;text-transform:uppercase;margin-bottom:6px;}
+  .pc-note strong{color:#dfe7f2;}
+
+  .toggle{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#5aa8ff;cursor:pointer;margin-top:10px;padding:6px 10px;border:1px solid #1a3a5c;border-radius:4px;background:transparent;}
+  .toggle:hover{background:rgba(90,168,255,0.08);}
+  .before-after{display:none;margin-top:10px;padding:12px;background:#0a1020;border-radius:6px;border:1px solid #1a2540;font-size:12px;color:#9bb0c8;line-height:1.55;}
+  .before-after.open{display:block;}
+  .before-after .ba-label{font-size:10px;font-weight:800;letter-spacing:1.4px;color:#7388a4;text-transform:uppercase;margin-bottom:6px;}
+  .before-after .ba-old{color:#7a8aa0;text-decoration:line-through;margin-bottom:10px;}
+
+  /* Review actions */
+  .review-row{display:flex;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid #1a2540;}
+  .rev-btn{flex:1;padding:9px 10px;font-size:11.5px;font-weight:700;letter-spacing:0.5px;border-radius:6px;border:1px solid;cursor:pointer;background:transparent;transition:all 0.15s;text-transform:uppercase;}
+  .rev-approve{border-color:#5fd49a;color:#5fd49a;}
+  .rev-approve:hover{background:#5fd49a;color:#072315;}
+  .rev-approve.active{background:#5fd49a;color:#072315;}
+  .rev-changes{border-color:#f5b454;color:#f5b454;}
+  .rev-changes:hover{background:#f5b454;color:#231908;}
+  .rev-changes.active{background:#f5b454;color:#231908;}
+
+  /* Filter tabs */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+  .filt{padding:8px 14px;font-size:11.5px;font-weight:700;letter-spacing:0.5px;border-radius:6px;border:1px solid #1a2540;background:transparent;color:#9bb0c8;cursor:pointer;transition:all 0.15s;text-transform:uppercase;}
+  .filt:hover{border-color:#2a3a5c;color:#dfe7f2;}
+  .filt.active{background:#1a56a0;border-color:#1a56a0;color:#fff;}
+
+  /* Footer */
+  .footer{margin-top:60px;padding:32px 0;border-top:1px solid #1a2540;text-align:center;font-size:12px;color:#5a7090;}
+  .footer strong{color:#dfe7f2;}
+
+  /* Hide cards on filter */
+  .post-card.hidden{display:none;}
+
+  /* The "what we fixed internally" callout */
+  .fixes-note{
+    background:rgba(90,168,255,0.06);border:1px solid rgba(90,168,255,0.2);border-radius:12px;padding:22px 26px;margin-bottom:32px;
+  }
+  .fixes-note .ft{font-size:12px;font-weight:800;letter-spacing:1.4px;color:#5aa8ff;text-transform:uppercase;margin-bottom:10px;}
+  .fixes-note .fl{font-size:14px;color:#dfe7f2;line-height:1.6;}
+  .fixes-note .fl strong{color:#fff;}
+  .fixes-note ul{margin-top:10px;padding-left:18px;font-size:13.5px;color:#9bb0c8;line-height:1.7;}
+  .fixes-note ul li::marker{color:#5aa8ff;}
+
+  /* Article preview (special for 24 June) */
+  .article-card{
+    background:linear-gradient(135deg, #131f38, #0a1424);
+    padding:30px 28px;color:#fff;
+  }
+  .article-card .art-tag{font-size:10px;font-weight:800;letter-spacing:2px;color:#f5b454;text-transform:uppercase;margin-bottom:14px;}
+  .article-card h3{font-size:24px;font-weight:900;line-height:1.2;letter-spacing:-0.5px;margin-bottom:12px;}
+  .article-card p{font-size:13px;color:#9bb0c8;line-height:1.5;margin-bottom:6px;}
+  .article-card .art-meta{font-size:11px;color:#5a7090;margin-top:14px;}
+
+  /* Video preview */
+  .video-mock{
+    aspect-ratio:1/1;background:linear-gradient(135deg,#0d1424,#1a2540);
+    display:flex;align-items:center;justify-content:center;position:relative;color:#fff;
+    border-top:1px solid #1a2540;border-bottom:1px solid #1a2540;
+  }
+  .play-btn{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;}
+  .play-btn::after{content:"";display:block;width:0;height:0;border-left:18px solid #0a0f1a;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;}
+  .video-overlay{position:absolute;bottom:0;left:0;right:0;padding:18px 22px;background:linear-gradient(to top, rgba(0,0,0,0.85), transparent);font-size:14px;font-weight:700;}
+
+  @media (max-width:800px){
+    .hero h1{font-size:32px;}
+    .stats-bar{grid-template-columns:repeat(2,1fr);}
+    .cal-head,.cal-row{grid-template-columns:70px repeat(7,1fr);font-size:10px;}
+    .cal-cell{padding:6px 4px;}
+    .cal-post{padding:4px 6px;font-size:10px;}
+    .posts-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Aspen Claims Service · LinkedIn Calendar</div>
+    <h1>June 2026 — <span class="accent">12 posts.</span><br/>Ready after three calls from you.</h1>
+    <p class="sub">
+      Damco's final June planner, reviewed against the Creative Strategy Deck you signed in April. Three items left for you to resolve. Each card below shows how the post will appear on LinkedIn.
+    </p>
+    <div class="meta-row">
+      <div class="meta-pill"><span class="label">Prepared for</span><span class="value">Mark Vetrovec · CEO, Aspen</span></div>
+      <div class="meta-pill"><span class="label">From</span><span class="value">Harshit Kaushik · Damco Digital</span></div>
+      <div class="meta-pill"><span class="label">Review window</span><span class="value">21–28 May 2026</span></div>
+      <div class="meta-pill"><span class="label">Branded hashtag</span><span class="value">#ClaimsWithAspen (locked)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ STATS BAR ═══════════════════════════ -->
+<div class="stats-bar">
+  <div class="stat"><div class="n">12</div><div class="l">Posts in June</div></div>
+  <div class="stat"><div class="n green">9</div><div class="l">Ready to ship</div></div>
+  <div class="stat"><div class="n amber">3</div><div class="l">Need your sign-off</div></div>
+  <div class="stat"><div class="n blue">3</div><div class="l">Pillars covered</div></div>
+</div>
+
+<div class="container">
+
+  <!-- ═══════════ TWO QUESTIONS FOR MARK ═══════════ -->
+  <section class="section">
+    <div class="section-head">
+      <h2><span class="num">01</span>Three things from you</h2>
+      <div class="ctx">Open items only you can resolve — each tied to a specific post below</div>
+    </div>
+
+    <div class="mark-block">
+      <span class="mark-tag">For Mark · Question 1 of 3</span>
+      <div class="mark-q">Is the 4-business-hour adjuster assignment a real Aspen SLA we can put on the record?</div>
+      <div class="mark-body">
+        The <strong>1 June "First 72 Hours" carousel</strong> opens with: <em>"An adjuster is assigned within 4 business hours. You get their name, phone number, and email — not a ticket number."</em>
+        If that's a guaranteed standard on every claim, it stays in. If it's aspirational on some file types, we soften the language now — before a carrier comes back later citing it.
+      </div>
+      <div class="mark-ref">→ See the post in section 03 below (1 June)</div>
+    </div>
+
+    <div class="mark-block">
+      <span class="mark-tag">For Mark · Question 2 of 3</span>
+      <div class="mark-q">Greenlight to publish the 24 June article under your byline as-is, or want a softer landing?</div>
+      <div class="mark-body">
+        <strong>"The case against single-carrier CAT teams"</strong> is the deck's hero piece — sharp, differentiated, exactly the POV that earns warm follows. One thing to flag: most of your prospect carriers are currently running the exact model the article critiques. The piece steel-mans the model before challenging it, but one line reads:
+        <em>"in practice, it's one of the most expensive ways a CAT operation can be structured."</em>
+        Comfortable signing your name to that, or want us to dial down the critique tone and lean into the "here's what works better" half?
+      </div>
+      <div class="mark-ref">→ See the article preview in section 03 below (24 June)</div>
+    </div>
+
+    <div class="mark-block">
+      <span class="mark-tag">For Mark · Question 3 of 3</span>
+      <div class="mark-q">Who's the voice on the 26 June vendor scorecard video?</div>
+      <div class="mark-body">
+        The <strong>26 June video</strong> on what carriers should actually measure on a vendor scorecard currently shows <em>"SVP, Field Operations (placeholder — confirm name)"</em> on the lower third. Pillar 2 is the named-POV pillar — anonymous attribution undermines the whole bet.
+        Two options: <strong>(a)</strong> run it under your name (vendor scorecards is operational, you can speak to it from 18 years), or <strong>(b)</strong> name Stephen or another senior leader who can put their face to it. Without one of those, we'd recommend holding the slot.
+      </div>
+      <div class="mark-ref">→ See the post in section 03 below (26 June)</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CALENDAR VIEW ═══════════ -->
+  <section class="section">
+    <div class="section-head">
+      <h2><span class="num">02</span>The month at a glance</h2>
+      <div class="ctx">Click any post to jump to its preview</div>
+    </div>
+
+    <div class="calendar">
+      <div class="cal-head">
+        <div class="day"></div>
+        <div class="day">Mon</div><div class="day">Tue</div><div class="day">Wed</div><div class="day">Thu</div><div class="day">Fri</div><div class="day">Sat</div><div class="day">Sun</div>
+      </div>
+
+      <!-- Week 1 -->
+      <div class="cal-row">
+        <div class="cal-week"><div class="w">Week 1</div><div class="d">Jun 1–7</div></div>
+        <div class="cal-cell">
+          <div class="date-num">1</div>
+          <div class="cal-post post-p1" onclick="scrollTo_('post-01')"><div class="p-pillar">Pillar 1 · Carousel</div>First 72 Hours</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">2</div></div>
+        <div class="cal-cell">
+          <div class="date-num">3</div>
+          <div class="cal-post post-p2" onclick="scrollTo_('post-02')"><div class="p-pillar">Pillar 2 · Quote</div>Field saw it coming</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">4</div></div>
+        <div class="cal-cell">
+          <div class="date-num">5</div>
+          <div class="cal-post post-p3" onclick="scrollTo_('post-03')"><div class="p-pillar">Pillar 3 · Stat</div>−41% deployment</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">6</div></div>
+        <div class="cal-cell"><div class="date-num">7</div></div>
+      </div>
+
+      <!-- Week 2 -->
+      <div class="cal-row">
+        <div class="cal-week"><div class="w">Week 2</div><div class="d">Jun 8–14</div></div>
+        <div class="cal-cell">
+          <div class="date-num">8</div>
+          <div class="cal-post post-p1" onclick="scrollTo_('post-04')"><div class="p-pillar">Pillar 1 · Editorial</div>HB-837 / FL</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">9</div></div>
+        <div class="cal-cell">
+          <div class="date-num">10</div>
+          <div class="cal-post post-p2" onclick="scrollTo_('post-05')"><div class="p-pillar">Pillar 2 · Quote</div>Closes twice</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">11</div></div>
+        <div class="cal-cell">
+          <div class="date-num">12</div>
+          <div class="cal-post post-p1" onclick="scrollTo_('post-06')"><div class="p-pillar">Pillar 1 · Carousel</div>Scope of Damage</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">13</div></div>
+        <div class="cal-cell"><div class="date-num">14</div></div>
+      </div>
+
+      <!-- Week 3 -->
+      <div class="cal-row">
+        <div class="cal-week"><div class="w">Week 3</div><div class="d">Jun 15–21</div></div>
+        <div class="cal-cell">
+          <div class="date-num">15</div>
+          <div class="cal-post post-p3" onclick="scrollTo_('post-07')"><div class="p-pillar">Pillar 3 · Editorial</div>NAIC market conduct</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">16</div></div>
+        <div class="cal-cell"><div class="date-num">17</div>
+          <div class="cal-post post-p2" onclick="scrollTo_('post-08')"><div class="p-pillar">Pillar 2 · Video</div>Overcommunicate</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">18</div></div>
+        <div class="cal-cell"><div class="date-num">19</div>
+          <div class="cal-post post-p1" onclick="scrollTo_('post-09')"><div class="p-pillar">Pillar 1 · Static</div>Insured gets a name</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">20</div></div>
+        <div class="cal-cell"><div class="date-num">21</div></div>
+      </div>
+
+      <!-- Week 4 -->
+      <div class="cal-row">
+        <div class="cal-week"><div class="w">Week 4</div><div class="d">Jun 22–28</div></div>
+        <div class="cal-cell">
+          <div class="date-num">22</div>
+          <div class="cal-post post-p3" onclick="scrollTo_('post-10')"><div class="p-pillar">Pillar 3 · Explainer</div>ClaimsPlus Approach</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">23</div></div>
+        <div class="cal-cell"><div class="date-num">24</div>
+          <div class="cal-post post-p1" onclick="scrollTo_('post-11')"><div class="p-pillar">Pillar 1 · Article</div>Single-carrier CAT</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">25</div></div>
+        <div class="cal-cell"><div class="date-num">26</div>
+          <div class="cal-post post-p2" onclick="scrollTo_('post-12')"><div class="p-pillar">Pillar 2 · Video</div>Vendor scorecards</div>
+        </div>
+        <div class="cal-cell"><div class="date-num">27</div></div>
+        <div class="cal-cell"><div class="date-num">28</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ALL POSTS ═══════════ -->
+  <section class="section">
+    <div class="section-head">
+      <h2><span class="num">03</span>The 12 posts</h2>
+      <div class="ctx">LinkedIn-native previews · approve or request changes inline</div>
+    </div>
+
+    <div class="filters">
+      <button class="filt active" data-filter="all">All 12</button>
+      <button class="filt" data-filter="p1">Pillar 1 · Claims Demystified</button>
+      <button class="filt" data-filter="p2">Pillar 2 · Voices from the Field</button>
+      <button class="filt" data-filter="p3">Pillar 3 · Data & Patterns</button>
+      <button class="filt" data-filter="pending">Needs your input</button>
+    </div>
+
+    <div class="posts-grid" id="posts-grid">
+
+      <!-- ───── POST 01 — 1 JUNE ───── -->
+      <article class="post-card" id="post-01" data-pillar="p1" data-status="pending">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">01</span><span class="m">Jun · Mon</span></div>
+          <span class="pc-pillar pill-p1">Pillar 1 · Carousel</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">Edited · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">The claims process looks like a black box from the outside. It isn't.
+
+The first 72 hours decide most of what follows — how fast the file moves, how clean the documentation is, how often the insured has to call back asking what's happening.
+
+Here's what actually happens during that window, step by step. No jargon. No fine print.
+
+If your team handles claims and any of this feels different from what you see day to day, tell us where it's rough. That's useful to us.
+
+<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#ClaimsOperations</span> <span class="hashtag">#InsuranceClaims</span> <span class="hashtag">#PropertyClaims</span></div>
+          <div class="li-media-mock">
+            <div class="carousel-tag">◆ Carousel · 7 frames · Part 01 of "How Claims Actually Work"</div>
+            <div class="logo-row"><div class="dot"></div>ASPEN CLAIMS SERVICE</div>
+            <h3>What happens in the first <span style="color:#5fd49a">72 hours</span> of your claim.</h3>
+            <p>18 years of claims operations. This is the process we've built.</p>
+            <div class="stat-foot">Frame 1 of 7 · Follow Aspen for Part 02 → Scope of Damage (12 Jun)</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-pending">Awaiting Mark · 4-hr SLA</span>
+          <div class="pc-note">
+            <span class="lbl">What's pending</span>
+            Frame 02 commits to <strong>"adjuster assigned within 4 business hours."</strong> Need Mark to confirm this is a real published SLA, not aspirational. If aspirational, frame copy softens to "typically within one business day." Everything else (6-step structure, carrier audience, carrier hook) is publish-ready.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 02 — 3 JUNE ───── -->
+      <article class="post-card" id="post-02" data-pillar="p2" data-status="fixed">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">03</span><span class="m">Jun · Wed</span></div>
+          <span class="pc-pillar pill-p2">Pillar 2 · Quote</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">Edited · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">Three things changed in CAT response this year. Two of them nobody's talking about.
+
+Deployments got faster across the industry — that's the obvious story. The two quieter ones matter more.
+
+One: file standards didn't keep up with the speed. Adjusters are getting there faster and submitting files that come back. Supplements climbing. Reopens climbing.
+
+Two: the carriers who handled CAT best this year prepared in February — not when the cone hit the map. The ones still building rosters at deployment took the hit on cycle time, quality, and NPS.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="li-media"><img src="PILLAR 2 VOICES FROM THE FIELD-45.png" alt="Mark Vetrovec quote — The field saw this coming"/></div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Mark's CAT POV with the "Field saw this coming" quote in the visual. Caption sits at ~150 words for the LinkedIn truncate cutoff.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 03 — 5 JUNE ───── -->
+      <article class="post-card" id="post-03" data-pillar="p3" data-status="fixed">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">05</span><span class="m">Jun · Fri</span></div>
+          <span class="pc-pillar pill-p3">Pillar 3 · Stat</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">Edited · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">Three years of investment in field readiness, one number.
+
+Across 4,280 deployments between 2022 and 2026, Aspen's average days-to-deploy is down 41%. That's the headline.
+
+The harder question is what moved the number:
+
+→ Pre-positioned rosters. Carriers we knew we were deploying for had named adjusters lined up before the season, not after the cone.
+→ Local-first sourcing. The fastest deployments aren't the longest hauls — they're the ones where the adjuster was already in the region.
+→ Documentation discipline at speed. The cycle time win only matters if the file doesn't come back.
+
+The full Q2 Aspen Claims Intelligence Report drops later this month. Comment to get it when it's out.
+
+<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#ClaimsIntelligence</span> <span class="hashtag">#ClaimsOperations</span> <span class="hashtag">#InsuranceData</span></div>
+          <div class="li-media-mock">
+            <div class="logo-row"><div class="dot"></div>ASPEN CLAIMS INTELLIGENCE</div>
+            <div class="stat-huge"><span class="sym">−</span>41<span style="font-size:48px;">%</span></div>
+            <div class="stat-sub">CAT deployment time, 2022 → 2026</div>
+            <div class="stat-foot">n = 4,280 deployments · Aspen-handled property claims · Pre-positioned rosters + local-first sourcing</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Anchored to the <strong>−41% CAT deployment time / n=4,280</strong> figure from the Creative Strategy Deck (slides 12 + 17). Methodology line built into the visual. CTA invites comments for the full Q2 Aspen Claims Intelligence Report.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 04 — 8 JUNE ───── -->
+      <article class="post-card" id="post-04" data-pillar="p1" data-status="approved">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">08</span><span class="m">Jun · Mon</span></div>
+          <span class="pc-pillar pill-p1">Pillar 1 · Editorial</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">3d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">Florida HB-837 has been covered exhaustively as tort reform — attorney fee restructuring, shorter statute of limitations, comparative negligence shifts. The legal commentary has been substantial. What's been written about less is what changes for the adjuster on the ground, two years in. Three operational shifts worth flagging — none of them about the law itself, all of them about the file standard the law now demands.
+
+Three operational shifts worth flagging:
+
+<strong>Documentation thresholds are higher, not lower.</strong> The narrower path to litigation hasn't reduced the scrutiny on file defensibility. If anything, the files that do reach disputed status now carry more weight. Photo discipline, scope detail, and contemporaneous notes matter more than they did eighteen months ago, not less.
+
+<strong>Communication timelines are tighter.</strong> The shorter notice window means delays that used to be recoverable now create coverage problems. Pre-loss documentation requests, post-loss notification windows, and proof of loss timelines all need to be tracked more tightly than the old workflow assumed.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="li-media-mock">
+            <div class="logo-row"><div class="dot"></div>ASPEN ON FL HB-837</div>
+            <h3 style="font-size:22px;line-height:1.3;">"HB-837 didn't change the claims work.<br/><span style="color:#5fd49a">It changed the documentation standard the claims work has to survive."</span></h3>
+            <p style="margin-top:18px;font-size:11px;color:#7388a4;letter-spacing:1px;text-transform:uppercase;">Editorial-style static</p>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Editorial-style static. Documentation/communication framing — no licensing claim. Two operational shifts unpacked in the caption. Defensible for any Florida claims director who reads it.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 05 — 10 JUNE ───── -->
+      <article class="post-card" id="post-05" data-pillar="p2" data-status="fixed">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">10</span><span class="m">Jun · Wed</span></div>
+          <span class="pc-pillar pill-p2">Pillar 2 · Quote</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">5d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">The cycle time number on a vendor scorecard is the easiest one to celebrate. It's also the easiest one to misread.
+
+A file that closes fast and stays closed is a win. A file that closes fast and comes back two months later isn't. It's actually worse than a file that took longer the first time — because now you're paying for the same claim twice, the policyholder has lost confidence in the process, and the supplement has carrier dollars in it that the original close didn't.
+
+The most expensive claim isn't the complex one. It's the one that closes twice.
+
+What makes a file come back is almost always one of three things — and none of them are visible on a cycle time report:
+
+Photo gaps that surface during a supplement request. Scope notes that didn't capture what the contractor later found. Coverage decisions made without the documentation to defend them downstream.
+
+None of those are mysterious failures. They're failures of first-pass discipline. And they're invisible until they become expensive.
+
+If your team is measuring vendors on cycle time alone, you're seeing half the picture.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="li-media-mock">
+            <div class="logo-row"><div class="dot"></div>ASPEN CLAIMS SERVICE</div>
+            <h3 style="font-size:24px;line-height:1.25;">"The most expensive claim isn't the complex one.<br/><span style="color:#5fd49a">It's the one that closes twice."</span></h3>
+            <p style="margin-top:18px;font-size:12px;color:#7388a4;letter-spacing:1px;text-transform:uppercase;">Mark Vetrovec · CEO · Aspen Claims Service</p>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Quote graphic under Mark's byline. Visual carries the line, caption unpacks the operational argument — file that closes twice is the expensive one.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 06 — 12 JUNE ───── -->
+      <article class="post-card" id="post-06" data-pillar="p1" data-status="fixed">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">12</span><span class="m">Jun · Fri</span></div>
+          <span class="pc-pillar pill-p1">Pillar 1 · Carousel</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">7d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">The document that decides what gets paid on a claim is one most carrier desks see at the back end of the file — long after the adjuster wrote it. The scope of damage.
+
+It sounds technical. It's actually the operational document the entire settlement hangs on. Coverage decisions, depreciation, supplement risk — all trace back to what's documented in the scope.
+
+Here's what's in a good one, what separates a clean file from one that comes back, and why first-pass discipline here saves the supplement six weeks later.
+
+<span class="hashtag">#ClaimsWithAspen</span> · <span class="hashtag">#InsuranceClaims</span> · <span class="hashtag">#PropertyClaims</span></div>
+          <div class="li-media-mock">
+            <div class="carousel-tag">◆ Carousel · 6 frames · Part 02 of "How Claims Actually Work"</div>
+            <div class="logo-row"><div class="dot"></div>ASPEN CLAIMS SERVICE</div>
+            <h3>What's in a <span style="color:#5fd49a">scope of damage</span> — and what separates a clean file from one that comes back.</h3>
+            <p>The settlement hangs on this document. Most teams never see how it gets built.</p>
+            <div class="stat-foot">Follow Aspen for Part 03 → QA before submission (Jul)</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Part 02 of the "How Claims Actually Work" carousel series. Threading from the 1 June Part 01 carousel — the page follow play depends on this kind of sequenced content.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 07 — 15 JUNE ───── -->
+      <article class="post-card" id="post-07" data-pillar="p3" data-status="approved">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">15</span><span class="m">Jun · Mon</span></div>
+          <span class="pc-pillar pill-p3">Pillar 3 · Editorial</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">10d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">Vendor selection is becoming a regulatory question, not just an operational one.
+
+A signal worth tracking from this year's NAIC market conduct examination data.
+
+State market conduct exams have shifted noticeably in their focus over the last two years. Claims handling — specifically, the consistency between policy language and adjuster decisions in the field — is getting more scrutiny than it has in over a decade. Several states have published findings that ladder up to the same operational concern: file documentation and adjuster decision rationale aren't keeping pace with the complexity of the products being written.
+
+The implication for carriers is meaningful, even though it's flying under the radar.
+
+Vendor selection is becoming a regulatory question, not just an operational one. The independent and third-party adjusters working a carrier's book are increasingly viewed as an extension of the carrier's compliance posture. A file that can't defend its own coverage decisions is a problem for the carrier, regardless of who wrote it.
+
+Two operational shifts worth flagging:
+
+<strong>File defensibility is now a regulatory metric,</strong> not just a quality one. The standards that matter aren't internal anymore. They're external.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="li-media-mock">
+            <div class="logo-row"><div class="dot"></div>NAIC MARKET CONDUCT TREND</div>
+            <h3>Vendor selection is becoming a regulatory question, <span style="color:#5fd49a">not just an operational one.</span></h3>
+            <p>A signal worth tracking from this year's NAIC market conduct examination data.</p>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Frames vendor selection as a regulatory question by reference to NAIC market conduct examination trends. Editorial-style static. Defensible without naming specific states — easy edit if Mark wants to add citations later.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 08 — 17 JUNE ───── -->
+      <article class="post-card" id="post-08" data-pillar="p2" data-status="approved">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">17</span><span class="m">Jun · Wed</span></div>
+          <span class="pc-pillar pill-p2">Pillar 2 · Video</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">12d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">A note from Mark on something most carriers don't talk about until it's already a problem.
+
+During CAT events, the natural instinct inside a claims operation is to slow down communication. The team is busy. The volume is high. Every minute spent updating the carrier desk is a minute not spent moving the next file.
+
+That instinct is wrong. Here's why we built our CAT model to do the opposite.
+
+🎧 Sound on.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="video-mock">
+            <div class="play-btn"></div>
+            <div class="video-overlay">Communication discipline doesn't slow you down. Silence does. · 0:90</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to record + publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Mark-led video on why Aspen overcommunicates during CAT events. Closing line: <em>"Communication discipline doesn't slow you down. Silence does."</em> Visual direction: Mark's headshot on deep navy, animated waveform, burned-in captions for sound-off, lower third "Mark · CEO, Aspen Claims". <strong>Action:</strong> Mark + Damco to coordinate a filming window.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 09 — 19 JUNE ───── -->
+      <article class="post-card" id="post-09" data-pillar="p1" data-status="approved">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">19</span><span class="m">Jun · Fri</span></div>
+          <span class="pc-pillar pill-p1">Pillar 1 · Static</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">14d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">One of the lines from our recent carousel that drew the most response.
+
+When a policyholder files a claim, the experience that follows is shaped less by the outcome than by how informed they feel along the way.
+
+Most of what creates dissatisfaction in a claim isn't the settlement amount. It's the silence between conversations. The chase calls. The handoffs to people the policyholder hasn't met. The lack of a clear answer to "what happens next?"
+
+Almost all of that is fixable in the first 24 hours.
+
+A name. A direct line. A clear expectation of what's coming.
+
+It's the part of the process that doesn't show up on a capabilities deck. It's also the part most policyholders remember when their renewal notice arrives twelve months later.
+
+<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#PolicyholderExperience</span> <span class="hashtag">#ClaimsOperations</span> <span class="hashtag">#InsuranceClaims</span></div>
+          <div class="li-media-mock">
+            <div class="logo-row"><div class="dot"></div>ASPEN CLAIMS SERVICE</div>
+            <h3>The insured gets a name,<br/><span style="color:#5fd49a">not a ticket number.</span></h3>
+            <p>One of the lines from our recent carousel that drew the most response.</p>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Ad-hoc follow-up pulling the highest-resonance line from the 1 June carousel into a standalone post. Reframes the "name, not a ticket number" idea around policyholder dissatisfaction and renewal behaviour.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 10 — 22 JUNE ───── -->
+      <article class="post-card" id="post-10" data-pillar="p3" data-status="fixed">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">22</span><span class="m">Jun · Mon</span></div>
+          <span class="pc-pillar pill-p3">Pillar 3 · Explainer</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">17d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">"First-pass discipline" is shorthand the industry uses for adjuster behaviour that's hard to define. We've been operationalising what it actually means for 18 years.
+
+ClaimsPlus Approach™ is the file standard we apply on every claim:
+
+→ Photo completeness — every damaged area, every angle, every condition, captured at first inspection.
+→ Contemporaneous scope notes — written during the inspection, not after.
+→ Coverage rationale documented in-line — the why, not just the what.
+
+Three steps. Trained on every adjuster on our roster. Audited per file.
+
+It's not glamorous. It's the difference between a file that closes once and a file that closes twice.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="li-media-mock">
+            <div class="logo-row"><div class="dot"></div>CLAIMSPLUS APPROACH™</div>
+            <h3 style="font-size:22px;">What "first-pass discipline" actually looks like, line by line.</h3>
+            <div class="three-up">
+              <div class="box"><div class="lbl">Step 01</div><div class="v">Photo completeness at first inspection</div></div>
+              <div class="box"><div class="lbl">Step 02</div><div class="v">Contemporaneous scope notes</div></div>
+              <div class="box"><div class="lbl">Step 03</div><div class="v">Coverage rationale documented in-line</div></div>
+            </div>
+            <div class="stat-foot">Trained on every Aspen adjuster · Audited per file</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-approved">Ready to publish</span>
+          <div class="pc-note">
+            <span class="lbl">Status</span>
+            Built around <strong>ClaimsPlus Approach</strong> — Aspen's named file standard from deck slide 13. Three-step explainer, no statistical claims to defend. Strong category positioning anchored to named IP.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 11 — 24 JUNE ───── -->
+      <article class="post-card" id="post-11" data-pillar="p1" data-status="pending">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">24</span><span class="m">Jun · Wed</span></div>
+          <span class="pc-pillar pill-p1">Pillar 1 · Article</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#1a3a5c"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">MV</text></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Mark Vetrovec</span>
+              <span class="li-tagline">CEO at Aspen Claims Service · 1st</span>
+              <span class="li-time">19d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">"Most carriers still run CAT the way they did ten years ago."
+
+A piece on why single-carrier CAT teams feel efficient and almost always cost more than they save in practice — and what works better.
+
+[Article link]
+
+— Mark, CEO · Aspen Claims</div>
+          <div class="article-card">
+            <div class="art-tag">◆ LinkedIn Article · 8 min read</div>
+            <h3>The case against single-carrier CAT teams.</h3>
+            <p>Why the dedicated-team model that looks like commitment on paper is, in practice, one of the most expensive ways a CAT operation can be structured — and what the carriers getting it right are doing differently.</p>
+            <div class="art-meta">By Mark Vetrovec · CEO, Aspen Claims Service · June 2026</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-pending">Awaiting Mark · Tone confirmation</span>
+          <div class="pc-note">
+            <span class="lbl">What's pending</span>
+            This is the deck's hero piece — strongest single asset in the month for warming up CCO follows. One line for Mark to confirm: <em>"in practice, it's one of the most expensive ways a CAT operation can be structured."</em> Most prospects (Travelers, Buckeye, Northfield) run exactly this model. Greenlight as-is, or want a softer landing — lead with "here's what works better" instead?
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve as-is</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Soften landing</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ───── POST 12 — 26 JUNE ───── -->
+      <article class="post-card" id="post-12" data-pillar="p2" data-status="pending">
+        <div class="pc-head">
+          <div class="pc-date"><span class="d">26</span><span class="m">Jun · Fri</span></div>
+          <span class="pc-pillar pill-p2">Pillar 2 · Video</span>
+        </div>
+        <div class="li-frame">
+          <div class="li-author">
+            <div class="li-avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#0a3a1a"/><path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#5fd49a"/></svg></div>
+            <div class="li-meta">
+              <span class="li-name">Aspen Claims Service</span>
+              <span class="li-tagline">P&amp;C claims partner · 1,200 followers</span>
+              <span class="li-time">21d · 🌐</span>
+            </div>
+          </div>
+          <div class="li-caption">A short take on the five numbers most carriers don't track on their vendor scorecards — and probably should.
+
+Cycle time and cost-per-file dominate most claims operations dashboards. Both matter. Neither tells the full story of how a vendor is actually performing on your book.
+
+Here are the five numbers worth adding.
+
+🎧 Sound on.
+
+<span class="hashtag">#ClaimsWithAspen</span></div>
+          <div class="video-mock">
+            <div class="play-btn"></div>
+            <div class="video-overlay">Five numbers most vendor scorecards miss. · 2:00 · Lower third: SVP, Field Operations (placeholder)</div>
+          </div>
+          <div class="li-bar">
+            <div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">↻ Repost</div><div class="b">→ Send</div>
+          </div>
+        </div>
+        <div class="pc-status">
+          <span class="status-pill s-pending">Awaiting Mark · Byline</span>
+          <div class="pc-note">
+            <span class="lbl">What's pending</span>
+            Lower third still shows <strong>"SVP, Field Operations (placeholder — confirm name)"</strong> in the final planner. Pillar 2 is the named-POV pillar — anonymous attribution undermines the whole bet. Plan A is reattributing to Mark (vendor scorecards is an operational angle he can speak to from 18 years). Plan B is naming Stephen or another senior leader. Needs Mark's call.
+          </div>
+          <div class="review-row">
+            <button class="rev-btn rev-approve" onclick="markReview(this,'approve')">✓ Approve</button>
+            <button class="rev-btn rev-changes" onclick="markReview(this,'changes')">✎ Request changes</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <div class="footer">
+    <strong>Aspen Claims Service · LinkedIn June 2026</strong> · Prepared by Damco Digital · Reviewed against the Creative Strategy Deck (Apr 2026, Mark-approved) and the LinkedIn Strategy MoM (14 May 2026).<br/>
+    Once the three open items close, the planner moves to production. No further sign-off needed on the nine ready posts.
+  </div>
+
+</div>
+
+<script>
+  // LinkedIn-style "see more / see less" for every caption
+  function setupSeeMore(){
+    document.querySelectorAll('.li-caption').forEach(cap=>{
+      // Remove any previously inserted toggle (in case of re-run)
+      if(cap.nextElementSibling && cap.nextElementSibling.classList && cap.nextElementSibling.classList.contains('li-more')){
+        cap.nextElementSibling.remove();
+      }
+      cap.classList.remove('expanded');
+      // Force clamp so we can measure
+      const isClipped = cap.scrollHeight > cap.clientHeight + 1;
+      if(!isClipped) return;
+      const btn=document.createElement('span');
+      btn.className='li-more';
+      btn.textContent='…see more';
+      btn.addEventListener('click',()=>{
+        const open=cap.classList.toggle('expanded');
+        btn.textContent=open?'see less':'…see more';
+      });
+      cap.parentNode.insertBefore(btn,cap.nextSibling);
+    });
+  }
+  window.addEventListener('load',setupSeeMore);
+  window.addEventListener('resize',()=>{
+    clearTimeout(window._rt);
+    window._rt=setTimeout(setupSeeMore,150);
+  });
+
+  // Smooth scroll to a post
+  function scrollTo_(id){
+    const el=document.getElementById(id);
+    if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.boxShadow='0 0 0 2px #5aa8ff';setTimeout(()=>{el.style.boxShadow='';},1600);}
+  }
+  // Review button toggle
+  function markReview(btn,kind){
+    const row=btn.parentElement;
+    row.querySelectorAll('.rev-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    // persist locally
+    const card=btn.closest('.post-card');
+    if(card&&card.id){localStorage.setItem('aspen-jun-'+card.id,kind);}
+  }
+  // Restore saved reviews
+  document.querySelectorAll('.post-card').forEach(card=>{
+    const saved=localStorage.getItem('aspen-jun-'+card.id);
+    if(saved){
+      const btn=card.querySelector(saved==='approve'?'.rev-approve':'.rev-changes');
+      if(btn)btn.classList.add('active');
+    }
+  });
+  // Filter tabs
+  document.querySelectorAll('.filt').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.filt').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const f=btn.dataset.filter;
+      document.querySelectorAll('.post-card').forEach(card=>{
+        if(f==='all'){card.classList.remove('hidden');}
+        else if(f==='pending'){card.classList.toggle('hidden',card.dataset.status!=='pending');}
+        else if(f==='fixed'){card.classList.toggle('hidden',card.dataset.status!=='fixed');}
+        else{card.classList.toggle('hidden',card.dataset.pillar!==f);}
+      });
+    });
+  });
+</script>
+</body>
+</html>
