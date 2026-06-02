@@ -109,6 +109,16 @@
   .post-p2{background:rgba(140,108,255,0.12);border-color:#8c6cff;color:#d4c8ff;}
   .post-p3{background:rgba(95,212,154,0.12);border-color:#5fd49a;color:#bce8d3;}
   .cal-post .change-flag{display:inline-block;background:#f5b454;color:#1a1108;font-size:8.5px;font-weight:800;padding:1px 5px;border-radius:3px;letter-spacing:0.8px;margin-top:4px;}
+  .cal-post.in-design{
+    background:rgba(255,255,255,0.025);border-color:#3a4560;color:#5a7090;cursor:default;
+    border-left-style:dashed;
+  }
+  .cal-post.in-design:hover{transform:none;}
+  .cal-post.in-design .p-pillar{opacity:0.5;}
+  .cal-post.in-design .id-tag{
+    display:inline-block;background:rgba(245,180,84,0.12);color:#c89455;
+    font-size:8.5px;font-weight:800;padding:1px 5px;border-radius:3px;letter-spacing:0.8px;margin-top:4px;
+  }
 
   /* Post cards */
   .posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:28px;}
@@ -289,10 +299,10 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">Aspen Claims Service · LinkedIn · v2 (final designs)</div>
-    <h1>June 2026 — <span class="accent">designs are back.</span><br/><span class="accent2">Five quick fixes, three calls from you.</span></h1>
+    <div class="eyebrow">Aspen Claims Service · LinkedIn · June 2026 review</div>
+    <h1>June 2026 — <span class="accent">eight posts ready for you.</span><br/><span class="accent2">Three calls from you, four still in design with Damco.</span></h1>
     <p class="sub">
-      Final visuals from Damco's design pass on the calendar you walked through on 21 May. Nine of the twelve are publish-ready. Five small fixes are queued on our side (you'll see the lines coming out below). Three open questions — only you can call them — are pinned at the top.
+      Eight of the twelve June posts are publish-ready and laid out below in LinkedIn-native preview. Four more are still in design on our side (calendar shows them muted) — you'll see those once they're back from rework. Three open questions are pinned at the top — only you can resolve them.
     </p>
     <div class="meta-row">
       <div class="meta-pill"><span class="label">Prepared for</span><span class="value">Mark Vetrovec · CEO, Aspen</span></div>
@@ -306,8 +316,8 @@
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat"><div class="n">12</div><div class="l">June posts</div></div>
-  <div class="stat"><div class="n green">9</div><div class="l">Publish-ready</div></div>
-  <div class="stat"><div class="n amber">5</div><div class="l">In-design fixes</div></div>
+  <div class="stat"><div class="n green">8</div><div class="l">In this review</div></div>
+  <div class="stat"><div class="n amber">4</div><div class="l">In design with Damco</div></div>
   <div class="stat"><div class="n blue">3</div><div class="l">Decisions for you</div></div>
 </div>
 
@@ -365,33 +375,10 @@
     </div>
   </section>
 
-  <!-- CHANGES BANNER -->
-  <section class="section">
-    <div class="section-head">
-      <h2><span class="num">02</span>What Damco's fixing internally</h2>
-      <div class="ctx">No decision needed from you — flagged here for visibility</div>
-    </div>
-    <div class="changes-banner">
-      <div class="cb-tag">Five in-design fixes · in flight before publish</div>
-      <h3>Stripping every specific operational stat from the visuals.</h3>
-      <p>
-        Per your steer on 21 May — until you and Stephen publish an internal metrics list, no specific quantified operational claims go on Aspen's LinkedIn. Narrative framing stays; the numbers come out. Five items being reworked on our side:
-      </p>
-      <ol>
-        <li><strong>22 June</strong> — strip <em>52% / 38% / 31%</em> from the visual. Keep the three-step ClaimsPlus explainer; keep "closes once vs closes twice."</li>
-        <li><strong>1 June · Frame 2</strong> — drop the <em>"within the hour"</em> time claim. Lead with "the insured gets a name, not a ticket number."</li>
-        <li><strong>1 June · Frame 3</strong> — drop the <em>"within 24 hours"</em> time claim. Keep the handover/onboarding narrative.</li>
-        <li><strong>5 June</strong> — rework as narrative-only. No <em>−41% / n=4,280</em>, no figures. Three drivers stay (pre-positioned rosters, local-first sourcing, documentation discipline at speed).</li>
-        <li><strong>12 June · Frame 2</strong> — fix content (currently has 1 June's copy pasted in by mistake). Reissue as scope-of-damage frame per the planner.</li>
-      </ol>
-      <div class="ftn">All five queued with Simran + Bhavika. Won't need another review pass unless you want one — we'll send the corrected versions alongside the publish-ready calendar.</div>
-    </div>
-  </section>
-
   <!-- CALENDAR -->
   <section class="section">
     <div class="section-head">
-      <h2><span class="num">03</span>The month at a glance</h2>
+      <h2><span class="num">02</span>The month at a glance</h2>
       <div class="ctx">Click any post tile to jump to its design below</div>
     </div>
     <div class="legend">
@@ -411,11 +398,11 @@
         <div class="cal-week"><div class="w">Wk 23</div><div class="d">Jun 1–7</div></div>
         <div class="cal-cell">
           <div class="date-num">01</div>
-          <a class="cal-post post-p1" href="#p-jun01">
+          <div class="cal-post post-p1 in-design">
             <div class="p-pillar">P1 · Carousel</div>
             First 72 Hours
-            <span class="change-flag">2 frames fixing</span>
-          </a>
+            <span class="id-tag">In design</span>
+          </div>
         </div>
         <div class="cal-cell"><div class="date-num">02</div></div>
         <div class="cal-cell">
@@ -428,11 +415,11 @@
         <div class="cal-cell"><div class="date-num">04</div></div>
         <div class="cal-cell">
           <div class="date-num">05</div>
-          <a class="cal-post post-p3" href="#p-jun05">
+          <div class="cal-post post-p3 in-design">
             <div class="p-pillar">P3 · Static</div>
             CAT readiness
-            <span class="change-flag">Stat rework</span>
-          </a>
+            <span class="id-tag">In design</span>
+          </div>
         </div>
         <div class="cal-cell"><div class="date-num">06</div></div>
         <div class="cal-cell"><div class="date-num">07</div></div>
@@ -459,11 +446,11 @@
         <div class="cal-cell"><div class="date-num">11</div></div>
         <div class="cal-cell">
           <div class="date-num">12</div>
-          <a class="cal-post post-p1" href="#p-jun12">
+          <div class="cal-post post-p1 in-design">
             <div class="p-pillar">P1 · Carousel</div>
             Scope of damage
-            <span class="change-flag">Frame 2 fix</span>
-          </a>
+            <span class="id-tag">In design</span>
+          </div>
         </div>
         <div class="cal-cell"><div class="date-num">13</div></div>
         <div class="cal-cell"><div class="date-num">14</div></div>
@@ -505,11 +492,11 @@
         <div class="cal-week"><div class="w">Wk 26</div><div class="d">Jun 22–28</div></div>
         <div class="cal-cell">
           <div class="date-num">22</div>
-          <a class="cal-post post-p1" href="#p-jun22">
+          <div class="cal-post post-p1 in-design">
             <div class="p-pillar">P1 · Static</div>
             ClaimsPlus 3-step
-            <span class="change-flag">Strip %s</span>
-          </a>
+            <span class="id-tag">In design</span>
+          </div>
         </div>
         <div class="cal-cell"><div class="date-num">23</div></div>
         <div class="cal-cell">
@@ -545,60 +532,11 @@
   <!-- POSTS -->
   <section class="section">
     <div class="section-head">
-      <h2><span class="num">04</span>The twelve posts</h2>
-      <div class="ctx">Each card shows the final design — LinkedIn-native preview</div>
+      <h2><span class="num">03</span>The eight posts ready for review</h2>
+      <div class="ctx">Each card shows the final design — LinkedIn-native preview. The four in-design posts (1, 5, 12, 22 June) come back to you once they're past rework.</div>
     </div>
 
     <div class="posts-grid">
-
-      <!-- 1 JUNE -->
-      <div class="post-card needs-fix" id="p-jun01">
-        <div class="pc-head">
-          <div class="pc-date"><div class="d">01</div><div class="m">June · Mon</div></div>
-          <div style="display:flex;gap:6px;"><span class="format-pill">Carousel · 7 frames</span><span class="pc-pillar pill-p1">Pillar 1</span></div>
-        </div>
-        <div class="li-frame">
-          <div class="li-author">
-            <div class="li-avatar"><span class="li-avatar-text">A</span></div>
-            <div class="li-meta">
-              <div class="li-name">Aspen Claims Service</div>
-              <div class="li-tagline">Independent Adjuster Network · Carrier-side outsourcing</div>
-              <div class="li-time">1 Jun 2026 · 🌐</div>
-            </div>
-          </div>
-          <p class="li-caption">The first 72 hours after assignment is where the file is won or lost.
-
-Here's how Aspen handles intake — without the carrier desk chasing.
-Swipe →
-
-<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#IndependentAdjusters</span> <span class="hashtag">#InsuranceClaims</span></p>
-          <div class="carousel" data-carousel>
-            <div class="carousel-counter"><span class="cur">1</span>/<span class="tot">7</span></div>
-            <button class="carousel-nav prev" data-dir="-1">‹</button>
-            <button class="carousel-nav next" data-dir="1">›</button>
-            <div class="carousel-track">
-              <div class="carousel-slide"><img src="visuals/june01-f01.png" alt="Frame 1"/></div>
-              <div class="carousel-slide"><img src="visuals/june01-f02.png" alt="Frame 2"/></div>
-              <div class="carousel-slide"><img src="visuals/june01-f03.png" alt="Frame 3"/></div>
-              <div class="carousel-slide"><img src="visuals/june01-f04.png" alt="Frame 4"/></div>
-              <div class="carousel-slide"><img src="visuals/june01-f05.png" alt="Frame 5"/></div>
-              <div class="carousel-slide"><img src="visuals/june01-f06.png" alt="Frame 6"/></div>
-              <div class="carousel-slide"><img src="visuals/june01-f07.png" alt="Frame 7"/></div>
-            </div>
-          </div>
-          <div class="li-bar"><div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">🔁 Repost</div><div class="b">📤 Send</div></div>
-        </div>
-        <div class="pc-status">
-          <div class="status-row">
-            <span class="status-pill s-fix">Frames 2 + 3 in rework</span>
-          </div>
-          <div class="fix-note">
-            <span class="lbl">What's coming out</span>
-            <strong>Frame 2:</strong> <span class="strike">"right adjuster identified within the hour"</span> → leads with "the insured gets a name, not a ticket number."<br/>
-            <strong>Frame 3:</strong> <span class="strike">"within 24 hours"</span> → narrative beat about handover/onboarding pace stays, the figure goes.
-          </div>
-        </div>
-      </div>
 
       <!-- 3 JUNE -->
       <div class="post-card" id="p-jun03">
@@ -625,58 +563,6 @@ Mark Vetrovec, CEO, on what actually separates IAs that hold up in a major loss 
         </div>
         <div class="pc-status">
           <div class="status-row"><span class="status-pill s-approved">Publish-ready</span></div>
-        </div>
-      </div>
-
-      <!-- 5 JUNE -->
-      <div class="post-card needs-fix" id="p-jun05">
-        <div class="pc-head">
-          <div class="pc-date"><div class="d">05</div><div class="m">June · Fri</div></div>
-          <div style="display:flex;gap:6px;"><span class="format-pill">Static · in design</span><span class="pc-pillar pill-p3">Pillar 3</span></div>
-        </div>
-        <div class="li-frame">
-          <div class="li-author">
-            <div class="li-avatar"><span class="li-avatar-text">A</span></div>
-            <div class="li-meta">
-              <div class="li-name">Aspen Claims Service</div>
-              <div class="li-tagline">Independent Adjuster Network · Carrier-side outsourcing</div>
-              <div class="li-time">5 Jun 2026 · 🌐</div>
-            </div>
-          </div>
-          <p class="li-caption">Three years of investment in field readiness — told through three operational shifts.
-
-Pre-positioned rosters. Local-first sourcing. Documentation discipline at speed.
-
-Not a marketing claim. Just how we built the response capability.
-
-<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#CATReadiness</span></p>
-          <div style="background:linear-gradient(135deg,#0d1424,#1a2540);aspect-ratio:1/1;color:#fff;padding:34px;display:flex;flex-direction:column;justify-content:center;margin:0 -16px;border-top:1px solid #1a2540;border-bottom:1px solid #1a2540;">
-            <div style="font-size:10px;font-weight:800;letter-spacing:2px;color:#5fd49a;margin-bottom:20px;">PILLAR 3 · IN DESIGN</div>
-            <div style="font-size:22px;font-weight:900;line-height:1.25;color:#fff;margin-bottom:18px;">Three years.<br/>Three operational shifts.<br/>One CAT response that holds.</div>
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
-              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
-                <div style="font-size:9px;color:#7388a4;font-weight:700;letter-spacing:1px;margin-bottom:4px;">ONE</div>
-                <div style="font-size:12px;color:#fff;font-weight:600;">Pre-positioned rosters</div>
-              </div>
-              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
-                <div style="font-size:9px;color:#7388a4;font-weight:700;letter-spacing:1px;margin-bottom:4px;">TWO</div>
-                <div style="font-size:12px;color:#fff;font-weight:600;">Local-first sourcing</div>
-              </div>
-              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:12px;">
-                <div style="font-size:9px;color:#7388a4;font-weight:700;letter-spacing:1px;margin-bottom:4px;">THREE</div>
-                <div style="font-size:12px;color:#fff;font-weight:600;">Doc discipline at speed</div>
-              </div>
-            </div>
-            <div style="font-size:11px;color:#5a7090;margin-top:18px;font-style:italic;">[Mockup — visual not yet produced. Bhavika builds after copy rework lands.]</div>
-          </div>
-          <div class="li-bar"><div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">🔁 Repost</div><div class="b">📤 Send</div></div>
-        </div>
-        <div class="pc-status">
-          <div class="status-row"><span class="status-pill s-fix">Stat strip + design in flight</span></div>
-          <div class="fix-note">
-            <span class="lbl">What's coming out</span>
-            Old version had <span class="strike">−41% / n=4,280 deployments</span> headline. Reworked qualitative: <em>"Three years of investment in field readiness, told through three operational shifts."</em> No %, no n=, anywhere on visual or in caption.
-          </div>
         </div>
       </div>
 
@@ -734,51 +620,6 @@ Documentation discipline isn't a legal play. It's how the carrier desk closes on
         </div>
         <div class="pc-status">
           <div class="status-row"><span class="status-pill s-approved">Publish-ready</span></div>
-        </div>
-      </div>
-
-      <!-- 12 JUNE -->
-      <div class="post-card needs-fix" id="p-jun12">
-        <div class="pc-head">
-          <div class="pc-date"><div class="d">12</div><div class="m">June · Fri</div></div>
-          <div style="display:flex;gap:6px;"><span class="format-pill">Carousel · 6 frames</span><span class="pc-pillar pill-p1">Pillar 1</span></div>
-        </div>
-        <div class="li-frame">
-          <div class="li-author">
-            <div class="li-avatar"><span class="li-avatar-text">A</span></div>
-            <div class="li-meta">
-              <div class="li-name">Aspen Claims Service</div>
-              <div class="li-tagline">Independent Adjuster Network · Carrier-side outsourcing</div>
-              <div class="li-time">12 Jun 2026 · 🌐</div>
-            </div>
-          </div>
-          <p class="li-caption">Scope of damage is the conversation that determines everything downstream.
-
-How the field captures it. How the desk reads it. How disputes get prevented before they start.
-Swipe →
-
-<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#PropertyClaims</span></p>
-          <div class="carousel" data-carousel>
-            <div class="carousel-counter"><span class="cur">1</span>/<span class="tot">6</span></div>
-            <button class="carousel-nav prev" data-dir="-1">‹</button>
-            <button class="carousel-nav next" data-dir="1">›</button>
-            <div class="carousel-track">
-              <div class="carousel-slide"><img src="visuals/june12-f01.png" alt="Frame 1"/></div>
-              <div class="carousel-slide"><img src="visuals/june12-f02.png" alt="Frame 2"/></div>
-              <div class="carousel-slide"><img src="visuals/june12-f03.png" alt="Frame 3"/></div>
-              <div class="carousel-slide"><img src="visuals/june12-f04.png" alt="Frame 4"/></div>
-              <div class="carousel-slide"><img src="visuals/june12-f05.png" alt="Frame 5"/></div>
-              <div class="carousel-slide"><img src="visuals/june12-f06.png" alt="Frame 6"/></div>
-            </div>
-          </div>
-          <div class="li-bar"><div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">🔁 Repost</div><div class="b">📤 Send</div></div>
-        </div>
-        <div class="pc-status">
-          <div class="status-row"><span class="status-pill s-fix">Frame 2 in rework</span></div>
-          <div class="fix-note">
-            <span class="lbl">What's coming out</span>
-            Frame 2 currently shows the wrong content — 1 June's "adjuster assigned within X hours" copy got pasted in by mistake. Being reissued as the intended scope-of-damage frame per the planner.
-          </div>
         </div>
       </div>
 
@@ -879,42 +720,6 @@ The field complexity is ours to manage.
         </div>
         <div class="pc-status">
           <div class="status-row"><span class="status-pill s-approved">Publish-ready</span></div>
-        </div>
-      </div>
-
-      <!-- 22 JUNE -->
-      <div class="post-card needs-fix" id="p-jun22">
-        <div class="pc-head">
-          <div class="pc-date"><div class="d">22</div><div class="m">June · Mon</div></div>
-          <div style="display:flex;gap:6px;"><span class="format-pill">Static</span><span class="pc-pillar pill-p1">Pillar 1</span></div>
-        </div>
-        <div class="li-frame">
-          <div class="li-author">
-            <div class="li-avatar"><span class="li-avatar-text">A</span></div>
-            <div class="li-meta">
-              <div class="li-name">Aspen Claims Service</div>
-              <div class="li-tagline">Independent Adjuster Network · Carrier-side outsourcing</div>
-              <div class="li-time">22 Jun 2026 · 🌐</div>
-            </div>
-          </div>
-          <p class="li-caption">The ClaimsPlus approach, in three operational moves:
-
-• Photo completeness before leaving the property
-• Contemporaneous scope notes, not reconstructed after
-• Coverage rationale captured inline with the estimate
-
-A file built this way closes once. Not twice.
-
-<span class="hashtag">#ClaimsWithAspen</span> <span class="hashtag">#ClaimsPlus</span></p>
-          <div class="li-media"><img src="visuals/june22.png" alt="22 June ClaimsPlus visual"/></div>
-          <div class="li-bar"><div class="b">👍 Like</div><div class="b">💬 Comment</div><div class="b">🔁 Repost</div><div class="b">📤 Send</div></div>
-        </div>
-        <div class="pc-status">
-          <div class="status-row"><span class="status-pill s-fix">Visual being re-cut</span></div>
-          <div class="fix-note">
-            <span class="lbl">What's coming out</span>
-            Visual currently shows <span class="strike">52% / 38% / 31%</span> — those come off. Three-step ClaimsPlus explainer (photo completeness · contemporaneous scope notes · coverage rationale in-line) stays. "Closes once vs closes twice" stays — that's positioning, not a metric.
-          </div>
         </div>
       </div>
 
