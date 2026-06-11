@@ -23,11 +23,8 @@
 
   /* ── company header card ── */
   .co-card{background:var(--li-card);border:1px solid var(--li-border);border-radius:8px;overflow:hidden;margin-bottom:8px}
-  .banner{height:120px;background:
-    radial-gradient(circle at 78% 30%, rgba(122,184,0,.55) 0 36px, transparent 37px),
-    radial-gradient(circle at 60% 65%, rgba(122,184,0,.35) 0 26px, transparent 27px),
-    radial-gradient(circle at 88% 70%, rgba(122,184,0,.25) 0 20px, transparent 21px),
-    linear-gradient(110deg,#10150d 0%, #1f2d1a 55%, #2c3f24 100%)}
+  .banner{height:120px;background:#161616;overflow:hidden}
+  .banner svg{width:100%;height:100%;display:block}
   .co-body{padding:0 16px 14px;position:relative}
   .co-logo{width:88px;height:88px;border-radius:4px;background:#fff;border:2px solid #fff;box-shadow:0 0 0 1px var(--li-border);position:relative;top:-44px;margin-bottom:-34px;display:flex;align-items:center;justify-content:center}
   .co-name{font-size:20px;font-weight:600;line-height:1.25}
@@ -130,13 +127,48 @@
 
   <!-- ───── COMPANY HEADER ───── -->
   <div class="co-card">
-    <div class="banner"></div>
+    <div class="banner">
+      <!-- black umbrellas, one green — recreation of the live LinkedIn banner -->
+      <svg viewBox="0 0 680 120" preserveAspectRatio="xMidYMid slice">
+        <rect width="680" height="120" fill="#141414"/>
+        <g id="umb-dark">
+          <g transform="translate(40,55) scale(1.25) rotate(-10)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#1f1f1f"/></g>
+          <g transform="translate(150,30) scale(1.1) rotate(8)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#262626"/></g>
+          <g transform="translate(95,105) scale(1.35) rotate(4)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#1a1a1a"/></g>
+          <g transform="translate(255,80) scale(1.3) rotate(-6)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#232323"/></g>
+          <g transform="translate(345,25) scale(1.05) rotate(12)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#202020"/></g>
+          <g transform="translate(420,95) scale(1.4) rotate(-3)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#1c1c1c"/></g>
+          <g transform="translate(610,90) scale(1.3) rotate(7)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#242424"/></g>
+          <g transform="translate(660,30) scale(1.0) rotate(-14)"><path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#1e1e1e"/></g>
+        </g>
+        <!-- the green one -->
+        <g transform="translate(505,62) scale(1.45) rotate(-6)">
+          <path d="M-60 0 A60 60 0 0 1 60 0 A15 11 0 0 0 30 0 A15 11 0 0 0 0 0 A15 11 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#8dc63f"/>
+          <path d="M-60 0 A60 60 0 0 1 -18 -57 A110 95 0 0 0 -30 0 A15 11 0 0 0 -60 0 Z" fill="#a3d55c"/>
+          <path d="M60 0 A60 60 0 0 0 18 -57 A110 95 0 0 1 30 0 A15 11 0 0 0 60 0 Z" fill="#76ad2e"/>
+          <line x1="0" y1="-60" x2="0" y2="-68" stroke="#5d8c20" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
     <div class="co-body">
       <div class="co-logo">
-        <svg viewBox="0 0 60 60" width="66" height="66">
-          <circle cx="30" cy="30" r="26" fill="none" stroke="#7ab800" stroke-width="3.4"/>
-          <path d="M14 38 Q24 18 31 27 Q37 34 46 22" fill="none" stroke="#7ab800" stroke-width="3.6" stroke-linecap="round"/>
-          <path d="M18 43 Q28 30 34 35 Q39 39 45 32" fill="none" stroke="#a4cf4e" stroke-width="2.6" stroke-linecap="round"/>
+        <svg viewBox="0 0 100 100" width="66" height="66">
+          <defs><clipPath id="lg-tri"><path d="M40 24 L82 73 L18 73 Z"/></clipPath></defs>
+          <g clip-path="url(#lg-tri)">
+            <g transform="skewX(-20)" transform-origin="50 73">
+              <rect x="26" y="20" width="2"   height="56" fill="#8dc63f"/>
+              <rect x="32" y="20" width="2.6" height="56" fill="#8dc63f"/>
+              <rect x="38.5" y="20" width="3.2" height="56" fill="#8dc63f"/>
+              <rect x="45.5" y="20" width="3.8" height="56" fill="#8dc63f"/>
+              <rect x="53" y="20" width="4.4" height="56" fill="#8dc63f"/>
+              <rect x="61" y="20" width="5"   height="56" fill="#8dc63f"/>
+              <rect x="69.5" y="20" width="5.6" height="56" fill="#8dc63f"/>
+              <rect x="78.5" y="20" width="6.2" height="56" fill="#8dc63f"/>
+              <rect x="88" y="20" width="6.8" height="56" fill="#8dc63f"/>
+            </g>
+          </g>
+          <path d="M15.6 74.1 A42 42 0 1 1 35.6 89.5" fill="none" stroke="#8dc63f" stroke-width="9"/>
+          <polygon points="20,83 41,80 35,98" fill="#8dc63f"/>
         </svg>
       </div>
       <div class="co-name">Aspen Claims Service</div>
@@ -162,7 +194,7 @@
 
   <div class="foot">
     Internal review preview prepared by Damco Digital · Not affiliated with or endorsed by LinkedIn.<br>
-    Creatives for 5 June (stat graphic) and 17 June (video) are in production — placeholders shown.<br>
+    The 17 June video post is in production and will be added to this preview once the edit is ready.<br>
     All captions verbatim from the June 2026 planner.
   </div>
 </div>
@@ -191,7 +223,7 @@ Two: the carriers who handled CAT best this year prepared in February - not when
 #ClaimsWithAspen`
 },
 {
-  date:"Friday · 5 June", time:"Scheduled · Fri, Jun 5", kind:"ph-image", phLabel:"Stat graphic — in design",
+  date:"Friday · 5 June", time:"Scheduled · Fri, Jun 5", kind:"video", vid:"visuals/june05.mp4",
   cap:`Three years of investment in field readiness, one number.
 Across 4,280 deployments between 2022 and 2026, Aspen's average days-to-deploy is down 41%. That's the headline.
 The harder question is what moved the number:
@@ -258,13 +290,6 @@ The carriers who handle this best are the ones who treat vendor selection as a c
 #ClaimsWithAspen #ClaimsIntelligence #InsuranceRegulation #VendorPerformance`
 },
 {
-  date:"Wednesday · 17 June", time:"Scheduled · Wed, Jun 17", kind:"ph-video", phLabel:"Video — in production",
-  cap:`A note from Mark on something most carriers don't talk about until it's already a problem.
-During CAT events, the natural instinct inside a claims operation is to slow down communication. The team is busy. The volume is high. Every minute spent updating the carrier desk is a minute not spent moving the next file.
-That instinct is wrong. Here's why we built our CAT model to do the opposite.
-🎧 Sound on.`
-},
-{
   date:"Friday · 19 June", time:"Scheduled · Fri, Jun 19", kind:"image", img:"visuals/june19.png",
   cap:`One of the lines from our recent carousel that drew the most response.
 When a policyholder files a claim, the experience that follows is shaped less by the outcome than by how informed they feel along the way.
@@ -309,10 +334,15 @@ A piece on why single-carrier CAT teams feel efficient and almost always cost mo
 const esc = s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const linkTags = s=>esc(s).replace(/(^|\s)(#[A-Za-z0-9]+)/g,'$1<span class="tag">$2</span>');
 
-const AV = `<svg viewBox="0 0 60 60" width="40" height="40">
-  <circle cx="30" cy="30" r="26" fill="none" stroke="#7ab800" stroke-width="3.4"/>
-  <path d="M14 38 Q24 18 31 27 Q37 34 46 22" fill="none" stroke="#7ab800" stroke-width="3.6" stroke-linecap="round"/>
-  <path d="M18 43 Q28 30 34 35 Q39 39 45 32" fill="none" stroke="#a4cf4e" stroke-width="2.6" stroke-linecap="round"/></svg>`;
+/* avatar reuses the header logo clip (document-wide id) */
+const AV = `<svg viewBox="0 0 100 100" width="40" height="40">
+  <g clip-path="url(#lg-tri)">
+    <g transform="skewX(-20)" transform-origin="50 73">
+      <rect x="26" y="20" width="2" height="56" fill="#8dc63f"/><rect x="32" y="20" width="2.6" height="56" fill="#8dc63f"/><rect x="38.5" y="20" width="3.2" height="56" fill="#8dc63f"/><rect x="45.5" y="20" width="3.8" height="56" fill="#8dc63f"/><rect x="53" y="20" width="4.4" height="56" fill="#8dc63f"/><rect x="61" y="20" width="5" height="56" fill="#8dc63f"/><rect x="69.5" y="20" width="5.6" height="56" fill="#8dc63f"/><rect x="78.5" y="20" width="6.2" height="56" fill="#8dc63f"/><rect x="88" y="20" width="6.8" height="56" fill="#8dc63f"/>
+    </g>
+  </g>
+  <path d="M15.6 74.1 A42 42 0 1 1 35.6 89.5" fill="none" stroke="#8dc63f" stroke-width="9"/>
+  <polygon points="20,83 41,80 35,98" fill="#8dc63f"/></svg>`;
 
 const ICONS = {
   like:'<svg viewBox="0 0 24 24"><path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.32 1.06 2.12 2.12 0 001.83 2.1 2.1 2.1 0 002.32 2.22h5.19a8.58 8.58 0 003.31-.66l2.06-.85h3.46a2.93 2.93 0 002.93-2.93v-4.63A2.93 2.93 0 0019.46 11z"/></svg>',
@@ -325,6 +355,8 @@ function postHTML(p, idx){
   let media='';
   if(p.kind==='image'){
     media=`<div class="p-media"><img loading="lazy" src="${p.img}" alt=""></div>`;
+  } else if(p.kind==='video'){
+    media=`<div class="p-media"><video src="${p.vid}" controls muted playsinline preload="metadata" style="width:100%;display:block;background:#000"></video></div>`;
   } else if(p.kind==='carousel'){
     const slides=p.frames.map(f=>`<div class="car-slide"><img loading="lazy" src="${f}" alt=""></div>`).join('');
     const dots=p.frames.map((_,i)=>`<span class="car-dot ${i===0?'on':''}"></span>`).join('');
